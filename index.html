@@ -1,9 +1,41 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <p>Hello World</p>
-        <script src="app.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blackjack Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Blackjack Game</h1>
+
+        <div class="game-board">
+            <div class="dealer-section">
+                <h2>Dealer's Hand:</h2>
+                <div id="dealer-hand" class="hand"></div>
+            </div>
+
+            <div class="player-section">
+                <h2>Player's Hand:</h2>
+                <div id="player-hand" class="hand"></div>
+            </div>
+
+            <div class="status" id="status">Welcome to Blackjack!</div>
+
+            <div class="buttons">
+                <button id="hit-btn">Hit</button>
+                <button id="stand-btn">Stand</button>
+                <button id="restart-btn" style="display: none;">Restart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
 </html>
