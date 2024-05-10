@@ -1,3 +1,82 @@
+/* Global styles */
 body {
-    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Game board styles */
+.game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dealer-section, .player-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hand {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#hit-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+#stand-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+#restart-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Status */
+.status {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
 }
